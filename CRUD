@@ -170,11 +170,11 @@ while True:
             clima = input("Digite o clima do treino: ")
             tempo = input("Digite o tempo do treino (em minutos): ")
             adicionar_treino(nome, loc, data, distancia, clima, tempo)
-        elif opcao == 2:
+        if opcao == 2:
             vizualizar()
-        elif opcao == 3:
+        if opcao == 3:
             update()
-        elif opcao == 4:
+        if opcao == 4:
             deletar()
     elif escolha == 2:
         print("""
@@ -187,7 +187,7 @@ while True:
             distancia_min = float(input("Distância mínima (em km): "))
             distancia_max = float(input("Distância máxima (em km): "))
             filtrar_treinos(tempo_min, tempo_max, distancia_min, distancia_max)
-    elif escolha == 3:
+    if escolha == 3:
         print("""
         ---menu de metas/desafios/sugestão de treinos aleatórios--_
             1- adicionar metas
@@ -197,7 +197,7 @@ while True:
         if decisao == 1:
             metas_usuario = metas()
             print("\nMetas definidas com sucesso!")
-        elif decisao == 2:
+        if decisao == 2:
             pass
         elif decisao == 3:
             pass
