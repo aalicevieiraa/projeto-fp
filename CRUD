@@ -23,27 +23,27 @@ def update():
                     if "Nome: " in conteudo[i]:
                         conteudo[i] = f"Nome: {novonome}\n"
 
-            elif atualizacao==2:
+            if atualizacao==2:
                 novodata = str(input("Digite a data: "))
 
                 for i in range(len(conteudo)):
                     if "Data: " in conteudo[i]:
                         conteudo[i] = f"Data: {novodata}\n"
 
-            elif atualizacao==3:
+            if atualizacao==3:
                 novoloc = str(input("Digite a localização: "))
 
                 for i in range(len(conteudo)):
                     if "Localizacão: " in conteudo[i]:
                         conteudo[i] = f"Localizacão: {novoloc}\n"
 
-            elif atualizacao==4:
+            if atualizacao==4:
                 novodistc = str(input("Digite a distância: "))
 
                 for i in range(len(conteudo)):
                     if "Distância: " in conteudo[i]:
                         conteudo[i] = f"Distância: {novoloc}\n"
-            elif atualizacao==5:
+            if atualizacao==5:
                 novoclima = str(input("Digite o clima: "))
 
                 for i in range(len(conteudo)):
